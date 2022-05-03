@@ -65,6 +65,22 @@ input::-moz-focus-inner {
 	padding: 0;
 }
 
+/*设置图片自适应及不显示的样式*/
+.img-hover {
+	width: 10%;
+	height: aotu;
+	padding: 0;
+	display: none;
+}
+/*设置h2文字鼠标滑过的样式*/
+p.text_hover:hover{
+	color: red;
+}
+/*设置鼠标滑过h2标签的文字时显示图片*/
+p:active + .img-hover {
+	display: block;
+}
+
 input, select, textarea {
 	-moz-appearance: none;
 	-webkit-appearance: none;
@@ -3327,3 +3343,5 @@ input, select, textarea {
 			}
 
 		}
+
+	
